@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/name"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/axis_type_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/select_radio"
+        android:layout_marginTop="@dimen/paddingBottom"
+        android:layout_marginBottom="@dimen/paddingBottom" />
+    <CheckBox
+        android:id="@+id/select_radio"
+        style="@android:style/Widget.CompoundButton.RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/paddingBottom"
+        android:text="27t"
+        android:textSize="@dimen/font_size_normal" />
+</LinearLayout>

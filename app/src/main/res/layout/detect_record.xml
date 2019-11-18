@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/detect_container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backGray"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/detect_time"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.0"
+        android:background="@color/list_background_normal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/paddingBottom2"
+        android:paddingTop="@dimen/paddingBottom2"
+        android:text="09:26 14:56"
+        android:textSize="@dimen/font_size_min"/>
+
+    <TextView
+        android:id="@+id/detect_plate_number"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.0"
+        android:background="@color/list_background_normal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/paddingBottom2"
+        android:paddingTop="@dimen/paddingBottom2"
+        android:text="陕A88452"
+        android:textSize="@dimen/font_size_min"/>
+
+    <TextView
+        android:id="@+id/detect_truck_type"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0"
+        android:background="@color/list_background_normal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/paddingBottom2"
+        android:paddingTop="@dimen/paddingBottom2"
+        android:text="6"
+        android:textSize="@dimen/font_size_min"/>
+
+    <TextView
+        android:id="@+id/detect_info"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3.0"
+        android:background="@color/list_background_normal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/paddingBottom2"
+        android:paddingTop="@dimen/paddingBottom2"
+        android:text="56.89"
+        android:textSize="@dimen/font_size_min"/>
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@color/list_background_normal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/detect_uploaded"
+            android:layout_width="@dimen/uploaded_size"
+            android:layout_height="@dimen/uploaded_size"
+            android:layout_gravity="center"
+            android:background="@color/list_background_normal"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

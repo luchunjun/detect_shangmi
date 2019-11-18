@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/title_gradient_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:textSize="@dimen/font_size_normal" />
+            <ImageView
+                android:id="@+id/axisIcon"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:id="@+id/twoConnect"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="20dp"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="@dimen/font_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="%"
+                android:textSize="@dimen/font_size_normal" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/saveBigCarCompensation"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="saveCompensation"
+            android:text="@string/save"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/title_gradient_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar_layout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="65dp"
+            android:id="@+id/icon"
+            android:layout_height="35dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:text="@string/compensation_by_truck_type_weight"
+            android:clickable="true"
+            android:onClick="startWeightFragmentCompensation"
+            android:textSize="@dimen/font_size_normal" />
+        <TextView
+            android:id="@+id/two_connect_axis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="startTwoConnectCompensation"
+            android:drawableStart="@mipmap/t2c"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:text="@string/compensation_by_two_connect_axis"
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_normal" />
+        <TextView
+            android:id="@+id/three_connect_axis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:drawableStart="@mipmap/t3c"
+            android:onClick="startThreeConnectCompensation"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:text="@string/three_connect_compensation"
+
+            android:textSize="@dimen/font_size_normal" />
+        <TextView
+            android:id="@+id/two_long_axis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/t2l"
+            android:visibility="gone"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="startTwoLongCompensation"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:text="@string/two_long_compensation"
+            android:textSize="@dimen/font_size_normal" />
+        <TextView
+            android:id="@+id/three_long_axis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/t3l"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:clickable="true"
+            android:onClick="startThreeLongCompensation"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:text="@string/three_long_compensation"
+            android:textSize="@dimen/font_size_normal" />
+    </LinearLayout>
+</LinearLayout>

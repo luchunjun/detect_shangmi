@@ -1,0 +1,160 @@
+/**
+  cg 中置轴挂车列车
+  jl 铰链列车
+  qg 全挂汽车列车
+  zh 载货列车
+  n 表示 几驱动轴
+  n 表示 驱动轴后面还有几轴
+*/
+
+{
+  "allaxises": [
+    {
+      "name": "t_2",
+      "types": [
+        {
+          "name": "t_2_zh_1",
+          "nickname": "载货汽车",
+          "limit": 18000
+        }
+      ]
+    },
+    {
+      "name": "t_3",
+      "types": [
+        {
+          "name": "t_3_cg1_1",
+          "nickname": "中置轴挂车列车",
+          "limit": 27000
+        },
+        {
+          "name": "t_3_jl1_1",
+          "nickname": "铰链列车",
+          "limit": 27000
+        },
+        {
+          "name": "t_3_zh2",
+          "nickname": "载货汽车",
+          "limit": 25000
+        },
+        {
+          "name": "t_3_zh1",
+          "nickname": "载货汽车",
+          "limit": 25000
+        }
+      ]
+    },
+    {
+      "name": "t_4",
+      "types": [
+        {
+          "name": "t_4_cg1_2",
+          "limit": 36000
+        },
+        {
+          "name": "t_4_cg2_1",
+          "nickname": "铰链列车",
+          "limit": 35000
+        },
+        {
+          "name": "t_4_jl1_2",
+          "nickname": "铰链列车",
+          "limit": 36000
+        },
+        {
+          "name": "t_4_qg1_2",
+          "nickname": "全挂汽车列车",
+          "limit": 36000
+        },
+        {
+          "name": "t_4_zh2",
+          "nickname": "载货汽车",
+          "limit": 31000
+        }
+      ]
+    },
+    {
+      "name": "t_5",
+      "types": [
+        {
+          "name": "t_5_cg2_2",
+          "nickname": "中置轴挂车列车",
+          "limit": 43000
+        },
+        {
+          "name": "t_5_cg1_2",
+          "nickname": "中置轴挂车列车",
+          "limit": 43000
+        },
+        {
+          "name": "t_5_jl2_2",
+          "nickname": "铰链列车",
+          "limit": 43000
+        },
+        {
+          "name": "t_5_jl1_2",
+          "nickname": "铰链列车",
+          "limit": 43000
+        },
+        {
+          "name": "t_5_jl1_3",
+          "nickname": "铰链列车",
+          "limit": 42000
+        },
+        {
+          "name": "t_5_qg2_2",
+          "nickname": "全挂汽车列车",
+          "limit": 43000
+        },
+        {
+          "name": "t_5_zh1_2",
+          "nickname": "载货汽车",
+          "limit": 43000
+        }
+      ]
+    },
+    {
+      "name": "t_6",
+      "types": [
+        {
+          "name": "t_6_cg2_3",
+          "limit": 49000
+        },
+        {
+          "name": "t_6_cg1_4",
+          "limit": 46000
+        },
+        {
+          "name": "t_6_cg2_2",
+          "limit": 49000
+        },
+        {
+          "name": "t_6_cg1_3",
+          "limit": 46000
+        },
+        {
+          "name": "t_6_jl2_3",
+          "limit": 49000
+        },
+        {
+          "name": "t_6_jl1_4",
+          "limit": 46000
+        },
+        {
+          "name": "t_6_jl1_3",
+          "limit": 46000
+        },
+        {
+          "name": "t_6_qg2_2",
+          "nickname": "载货汽车",
+          "limit": 49000
+        },
+        {
+          "name": "t_6_qg1_3",
+          "nickname": "载货汽车",
+          "limit": 46000
+        }
+      ]
+    }
+  ]
+}

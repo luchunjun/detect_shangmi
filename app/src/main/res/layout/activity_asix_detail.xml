@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/two_axis_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/paddingBottom">
+
+        <ImageButton
+            android:id="@+id/driving_license"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/imageView_height"
+            android:layout_marginEnd="@dimen/paddingLeft_x2"
+            android:layout_marginStart="@dimen/paddingLeft_x2"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/driving_license"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/paddingLeft_x2"
+            android:paddingStart="@dimen/paddingLeft_x2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="车重"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <EditText
+                android:id="@+id/weight_edit"
+                android:layout_width="@dimen/plate_edit_width"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/weight"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <TextView
+                android:id="@+id/driving_license_reset"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="end|center"
+                android:text="重拍"
+                android:textSize="@dimen/font_size_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wheel_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/paddingBottom">
+
+        <ImageButton
+            android:id="@+id/wheel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/imageView_height"
+            android:layout_marginEnd="@dimen/paddingLeft_x2"
+            android:layout_marginStart="@dimen/paddingLeft_x2"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/sub_wheel"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/paddingLeft_x2"
+            android:paddingStart="@dimen/paddingLeft_x2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="减少轴组"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <EditText
+                android:id="@+id/wheel_count"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="x3 t"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <TextView
+                android:id="@+id/wheel_reset"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="end|center"
+                android:paddingEnd="@dimen/paddingLeft_x2"
+                android:text="重拍"
+                android:textSize="@dimen/font_size_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/air_suspension_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wheel_detail"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/paddingBottom">
+
+        <ImageButton
+            android:id="@+id/air_suspension"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/imageView_height"
+            android:layout_marginEnd="@dimen/paddingLeft_x2"
+            android:layout_marginStart="@dimen/paddingLeft_x2"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/air_suspension"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/paddingLeft_x2"
+            android:paddingStart="@dimen/paddingLeft_x2">
+
+            <CheckBox
+                android:id="@+id/air_suspension_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="空气悬挂"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <TextView
+                android:id="@+id/air_suspension_reset"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="end|center"
+                android:paddingEnd="@dimen/paddingLeft_x2"
+                android:text="重拍"
+                android:textSize="@dimen/font_size_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/paddingBottom"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/paddingLeft_x2"
+        android:paddingStart="@dimen/paddingLeft_x2">
+
+        <Button
+            android:id="@+id/axis_cancel"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="@dimen/paddingLeft_x2"
+            android:layout_marginStart="@dimen/paddingLeft_x2"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_style"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:paddingTop="@dimen/paddingBottom"
+            android:text="取消"
+            android:textColor="@color/default_white"
+            android:textSize="@dimen/font_size_normal"/>
+
+        <Button
+            android:id="@+id/axis_ok"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="@dimen/paddingLeft_x2"
+            android:layout_marginStart="@dimen/paddingLeft_x2"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_style"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:paddingTop="@dimen/paddingBottom"
+            android:text="确认"
+            android:textColor="@color/default_white"
+            android:textSize="@dimen/font_size_normal"/>
+    </LinearLayout>
+</RelativeLayout>

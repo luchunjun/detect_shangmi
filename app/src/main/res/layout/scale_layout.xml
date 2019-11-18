@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ll_a_weight"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10.0dip"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sensor_a_status"
+        android:layout_width="@dimen/icon_height"
+        android:layout_height="@dimen/icon_height"
+        android:background="@drawable/sensor_circle_offline"
+        android:gravity="center"
+        android:text="@string/sensor_A_label"
+        android:textColor="@color/default_white"
+        android:textSize="@dimen/font_size_large"/>
+
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paddingLeft"
+        android:layout_toRightOf="@id/sensor_a_status"
+        android:gravity="center_vertical"
+        android:text="@string/battery_label"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/font_size_normal"/>
+
+    <TextView
+        android:id="@+id/battery_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paddingLeft"
+        android:layout_toRightOf="@id/textView93"
+        android:gravity="center_vertical"
+        android:text="-%"
+        android:textColor="@color/switch_on"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/font_size_normal"/>
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView93"
+        android:layout_marginStart="@dimen/paddingLeft"
+        android:layout_toRightOf="@id/sensor_a_status"
+        android:gravity="center_vertical"
+        android:text="@string/signal_label"
+        android:textSize="@dimen/font_size_normal"/>
+
+    <ImageView
+        android:id="@+id/sensor_a_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView93"
+        android:layout_marginStart="@dimen/paddingLeft"
+        android:layout_toRightOf="@id/battery_a"
+        android:background="@mipmap/connection_0"/>
+</RelativeLayout>

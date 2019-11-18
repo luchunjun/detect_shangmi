@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/backgroundcolor"
+        android:divider="@drawable/linear_divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/paddingBottom_x2"
+            android:paddingTop="@dimen/paddingBottom_x2">
+
+            <LinearLayout
+                android:id="@+id/LayoutCompensationFactor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0.5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.lu.portable.detect.view.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/icon_tianping"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingLeft_x2"
+                    android:text="补偿系数"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/textView80"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/paddingLeft_x2"
+                    android:gravity="end"
+                    android:text=">"
+                    android:textSize="@dimen/font_size_large"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/paddingBottom_x2"
+            android:paddingTop="@dimen/paddingBottom_x2">
+
+            <LinearLayout
+                android:id="@+id/LayoutSystemInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0.5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.lu.portable.detect.view.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/icon_shebei"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingLeft_x2"
+                    android:text="系统配置"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/textView93"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/paddingLeft_x2"
+                    android:gravity="end"
+                    android:text=">"
+                    android:textSize="@dimen/font_size_large"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/paddingBottom_x2"
+            android:paddingTop="@dimen/paddingBottom_x2">
+
+            <LinearLayout
+                android:id="@+id/LayoutStaticCalibration"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0.5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.lu.portable.detect.view.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/icon_zhongliangweight9"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingLeft_x2"
+                    android:text="静态称重"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/textView82"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/paddingLeft_x2"
+                    android:gravity="end"
+                    android:text=">"
+                    android:textSize="@dimen/font_size_large"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutOtherSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/paddingBottom_x2"
+            android:paddingTop="@dimen/paddingBottom_x2">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0.5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.lu.portable.detect.view.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/icon_shezhi"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/textView78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingLeft_x2"
+                    android:text="@string/title_activity_other_setting"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/paddingLeft_x2"
+                    android:gravity="end"
+                    android:text=">"
+                    android:textSize="@dimen/font_size_large"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/paddingBottom_x2"
+            android:paddingTop="@dimen/paddingBottom_x2">
+
+            <LinearLayout
+                android:id="@+id/asyncData"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0.5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.lu.portable.detect.view.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/icon_async"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/aysncTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingLeft_x2"
+                    android:text="数据同步"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/aysnc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/paddingLeft_x2"
+                    android:gravity="end"
+                    android:text=">"
+                    android:textSize="@dimen/font_size_large"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

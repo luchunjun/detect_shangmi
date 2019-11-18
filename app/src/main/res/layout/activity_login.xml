@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/detect"
+    android:gravity="center"
+    tools:context="com.lu.portable.detect.ui.LoginActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="@string/action_sign_in_short"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/loginuserselectorlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/paddingBottom_x2"
+        android:layout_marginTop="@dimen/paddingBottom_x4"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/paddingLeft"
+            android:layout_weight="4.0"
+            android:background="@drawable/ic_back_black_24dp"
+            android:onClick="preUser"
+            />
+
+        <com.lu.portable.detect.view.RoundedImageView
+            android:id="@+id/userlogo"
+            android:layout_width="@dimen/user_logo"
+            android:layout_height="@dimen/user_logo"
+            android:layout_marginLeft="@dimen/paddingLeft"
+            android:layout_marginRight="@dimen/paddingLeft"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@mipmap/user_icon"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/paddingLeft"
+            android:layout_weight="4.0"
+            android:background="@drawable/ic_chevron_right_black_24dp"
+            android:onClick="nextUser"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/login_bg_corner_rectangle"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="username"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/paddingBottom_x3"
+            android:background="@drawable/textedit_style"
+            android:drawableLeft="@drawable/ic_lock_blue_24dp"
+            android:hint="@string/prompt_password"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified|normal"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_normal"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/twoScaleRadioBtn"
+                android:layout_width="wrap_content"
+                android:text="@string/twoScale"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/fourScaleRadioBtn"
+                android:text="@string/FourScale"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_login"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="login" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/copyrighttextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:paddingBottom="@dimen/paddingBottom"
+        android:paddingTop="@dimen/paddingBottom"
+        android:text="@string/copy_string"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_mmin"/>
+</LinearLayout>

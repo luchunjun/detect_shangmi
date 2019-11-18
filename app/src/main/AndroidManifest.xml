@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kernal.demo.plateid">
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name="com.lu.portable.detect.PortableBalanceApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/project_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.lu.portable.detect.ui.SplashActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lu.portable.detect.ui.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name="com.lu.portable.detect.ui.HomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lu.portable.detect.DelUserActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lu.portable.detect.ui.PlateidMainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lu.portable.detect.SingleRecordActivity"
+            android:label="单条记录"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.lu.portable.detect.CompensationFactorActivity"
+            android:label="补偿系数"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name="com.lu.portable.detect.CompensationSpeedFactorActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lu.portable.detect.CompensationCommonCarWeightActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lu.portable.detect.StaticWeightingActivity"
+            android:label="静态称重"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name="com.lu.portable.detect.ui.OtherSettingActivity"
+            android:label="其他设置"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.lu.portable.detect.ui.ModifyMineInfoActivity"
+            android:label="修改密码"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name="com.lu.portable.detect.ui.RecordListActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.lu.portable.detect.SingleTouchImageViewActivity"
+            android:label="@string/title_activity_single_touch_image_view"
+            />
+        <activity
+            android:name="com.lu.portable.detect.TwoConnectCompensationActivity"
+            />
+        <activity
+            android:name="com.lu.portable.detect.AxisCompensationActivity"
+            /><activity
+            android:name="com.lu.portable.detect.CompensationTwoConnectActivity"
+            />
+        <activity
+            android:name="com.lu.portable.detect.ui.LogReaderActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.lu.portable.detect.ui.LogListActivity" />
+        <activity
+            android:name="com.lu.portable.detect.CompensationFactorListActivity"
+            android:parentActivityName="com.lu.portable.detect.ui.HomeActivity" />
+
+        <activity
+            android:name="com.lu.portable.detect.AccountActivity" />
+        <activity
+            android:name="com.lu.portable.detect.BigCarCompensationActivity" />
+        <activity
+            android:name="com.lu.portable.detect.SocketActivity" />
+
+        <activity
+            android:name="com.lu.portable.detect.ui.PolicyActivity"
+            android:label="@string/policy_info" />
+        <activity
+            android:name="com.lu.portable.detect.ResultActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lu.portable.detect.ui.PortSettingActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lu.portable.detect.ui.TestActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.kernal.demo.plateid.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+
+</manifest>

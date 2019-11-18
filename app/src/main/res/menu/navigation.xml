@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_detect"
+        android:icon="@mipmap/ic_detect_gray"
+        android:title="@string/IDS_detect"/>
+    <item
+        android:id="@+id/item_record"
+        android:icon="@drawable/ic_records"
+        android:title="@string/IDS_record"/>
+    <item
+        android:id="@+id/item_mine"
+        android:icon="@drawable/ic_mine"
+        android:title="@string/IDS_mine"/>
+</menu>

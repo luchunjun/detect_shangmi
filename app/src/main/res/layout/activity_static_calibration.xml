@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar_layout"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/static_calibration_hint"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@drawable/text_item_divider"
+        android:dividerHeight="1dp"
+        android:paddingLeft="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="@dimen/calibration_size"
+            android:layout_height="@dimen/calibration_size"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/start_circle"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="@color/default_white"
+            android:textSize="@dimen/font_size_large"/>
+
+        <TextView
+            android:id="@+id/tv_aelec_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_weight"
+            android:layout_centerHorizontal="true"
+            android:text="0.0"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/font_size_large"/>
+
+        <TextView
+            android:id="@+id/tv_belec_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_aelec_value"
+            android:layout_centerHorizontal="true"
+            android:text="0.0"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/font_size_large"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30.0dip"
+            android:text="单位：公斤"
+            android:textColor="@color/default_white"
+            android:textSize="@dimen/font_size_large"/>
+    </RelativeLayout>
+</LinearLayout>

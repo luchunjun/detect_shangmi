@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/paddingBottom">
+
+    <TextView
+        android:id="@+id/compensationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="整体补偿："
+        android:textSize="@dimen/font_size_big" />
+
+    <ImageView
+        android:id="@+id/truckImage"
+        android:layout_width="@dimen/compensation_image_width"
+        android:layout_height="@dimen/compensation_image_height"
+        android:src="@mipmap/wheel1_2" />
+
+    <EditText
+        android:id="@+id/compensationValue"
+        android:layout_width="@dimen/compensation_width"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textSize="@dimen/font_size_big" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="%"
+        android:textSize="@dimen/font_size_normal" />
+
+</LinearLayout>

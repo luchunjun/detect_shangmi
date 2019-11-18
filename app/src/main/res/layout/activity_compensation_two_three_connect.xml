@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/title_gradient_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar_layout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="65dp"
+            android:id="@+id/icon"
+            android:layout_height="35dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:text="@string/compensation_by_truck_type_weight"
+            android:clickable="true"
+            android:onClick="startWeightFragmentCompensation"
+            android:textSize="@dimen/font_size_normal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="startConnectCompensation"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:text="@string/compensation_by_two_connect_axis"
+            android:textSize="@dimen/font_size_normal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="startThreeConnectCompensation"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:text="@string/three_connect_compensation"
+            android:textSize="@dimen/font_size_normal" />
+    </LinearLayout>
+</LinearLayout>

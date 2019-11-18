@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8.0dip">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_log_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始：%s"/>
+
+        <TextView
+            android:id="@+id/tv_log_endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束：%s"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_log_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#ffffaaaa"
+        android:padding="2.0dip"
+        android:text="0 B"
+        android:textAppearance="?android:textAppearanceSmall"/>
+</RelativeLayout>

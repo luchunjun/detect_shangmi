@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <ListView
+       android:id="@+id/view_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paddingBottom_x2"
+        android:layout_marginEnd="@dimen/paddingLeft"
+        android:layout_marginStart="@dimen/paddingLeft"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_container"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/paddingLeft_x2"
+        android:paddingEnd="@dimen/paddingLeft_x2"
+        android:paddingStart="@dimen/paddingLeft_x2">
+
+        <Button
+           android:id="@+id/select_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15.0dip"
+            android:background="@color/readedmessage"
+            android:text="@string/IDS_common_cancel"/>
+
+        <Button
+           android:id="@+id/select_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15.0dip"
+            android:layout_marginStart="10.0dip"
+            android:background="@color/normal_blue"
+            android:text="@string/confirm_btn_string"
+            android:textColor="@color/default_white"/>
+    </LinearLayout>
+</RelativeLayout>

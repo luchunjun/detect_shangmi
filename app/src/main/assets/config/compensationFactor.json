@@ -1,0 +1,179 @@
+{
+  "speed": {
+    "name": "速度",
+    "items": [
+      {
+        "key": "cf_speedbelow3",
+        "name": "3km/h以下",
+        "value": 97
+      },
+      {
+        "key": "cf_speed3_4",
+        "name": "3-4km/h间",
+        "value": 100
+      },
+      {
+        "key": "cf_speed4_5",
+        "name": "4-5km/h间",
+        "value": 105
+      },
+      {
+        "key": "cf_speed5_6",
+        "name": "5-6km/h间",
+        "value": 110
+      },
+      {
+        "key": "cf_speed6_8",
+        "name": "6-8km/h间",
+        "value": 110
+      },
+      {
+        "key": "cf_speedabove8",
+        "name": "8km/h以上",
+        "value": 115
+      }
+    ]
+  },
+  "truck": {
+    "name": "轴型",
+    "types": [
+      {
+        "name": "载货汽车",
+        "items": [
+          {
+            "key": "cf_2|1_1|total",
+            "name": "1-1型",
+            "total": 89,
+            "factors": []
+          }
+        ]
+      },
+      {
+        "name": "三轴车",
+        "items": [
+          {
+            "key": "cf_3|1_2|total",
+            "name": "1-2型",
+            "total": 87,
+            "factors": [
+              {
+                "key": "cf_3|1_2|2",
+                "name": "补二连轴",
+                "value": 85
+              }
+            ]
+          },
+          {
+            "key": "cf_3|2_1|total",
+            "name": "2-1型",
+            "total": 87,
+            "factors": [
+              {
+                "key": "cf_3|2_1|2",
+                "name": "补二连轴",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "四轴车",
+        "items": [
+          {
+            "key": "cf_4|1_1_2|total",
+            "name": "1-1-2型",
+            "total": 89,
+            "factors": [
+              {
+                "key": "cf_4|1_1_2|2",
+                "name": "补二连轴",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "五轴车",
+        "items": [
+          {
+            "key": "cf_5|1_1_3|total",
+            "name": "1-1-3型",
+            "total": 92,
+            "factors": [
+              {
+                "key": "cf_5|1_1_3|3",
+                "name":"补3连轴",
+                "value": 70
+              }
+            ]
+          },
+          {
+            "key": "cf_5|1_2_2|total",
+            "name": "1-2-2型",
+            "total": 95,
+            "factors": [
+              {
+                "key": "cf_5|1_2_2|2",
+                "name":"补2连轴",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "key": "cf_5|1_1_1_2|total",
+            "name": "1-1-1-2型",
+            "total": 95,
+            "factors": [
+              {
+                "key": "cf_5|1_1_1_2|2",
+                "name":"补2连轴",
+                "value": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "六轴车",
+        "items": [
+          {
+            "key": "cf_6|1_2_3|total",
+            "name": "1-2-3型",
+            "total": 89,
+            "factors": [
+              {
+                "key": "cf_6|1_2_3|2",
+                "name":"补2连轴",
+                "value": 90
+              },
+              {
+                "key": "cf_6|1_2_3|3",
+                "name":"补3连轴",
+                "value": 70
+              }
+            ]
+          },
+          {
+            "key": "cf_6|1_1_1_3|total",
+            "name": "1-1-1-3型",
+            "total": 89,
+            "factors": [
+              {
+                "key": "cf_6|1_1_1_3|111",
+                "name":"补3连单轴",
+                "value": 92
+              },
+              {
+                "key": "cf_6|1_1_1_3|3",
+                "name":"补3连轴",
+                "value": 70
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

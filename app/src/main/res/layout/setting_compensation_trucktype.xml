@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:paddingBottom="6.0dip"
+             android:paddingTop="6.0dip">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_all_corner"
+        android:divider="@drawable/linear_divider"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/paddingLeft"
+        android:paddingTop="@dimen/paddingBottom"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/truckTypeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:layout_marginTop="@dimen/paddingBottom_x_5"
+                android:paddingBottom="@dimen/paddingBottom_x_5"
+                android:paddingLeft="@dimen/paddingLeft"
+                android:paddingRight="@dimen/paddingLeft"
+                android:paddingTop="@dimen/paddingBottom_x_5"
+                android:text="@string/compensation_item_type_title"
+                android:textColor="@color/theme_default_primary"
+                android:textSize="@dimen/font_size_min"/>
+
+            <ImageView
+                android:id="@+id/truckTypeThumb"
+                android:layout_width="@dimen/compensation_image_width"
+                android:layout_height="@dimen/compensation_image_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/wheel1_1_1_2"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/truckTypetotal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/paddingLeft"
+            android:background="@color/default_white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@color/pink"
+                android:ems="1"
+                android:gravity="center_vertical"
+                android:paddingBottom="1.0dip"
+                android:paddingTop="1.0dip"
+                android:text="整体补偿"
+                android:textColor="@color/default_white"
+                android:textSize="@dimen/font_size_mmin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerTruckTypesFactors"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/paddingLeft"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@color/orange"
+                android:ems="1"
+                android:gravity="center_vertical"
+                android:paddingBottom="1.0dip"
+                android:paddingTop="1.0dip"
+                android:text="按轴组补偿"
+                android:textColor="@color/default_white"
+                android:textSize="@dimen/font_size_mmin"/>
+
+            <LinearLayout
+                android:id="@+id/lvTruckTypesFactors"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/paddingLeft"
+                android:orientation="vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

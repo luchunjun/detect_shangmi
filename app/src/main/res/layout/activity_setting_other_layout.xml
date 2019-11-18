@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.lu.portable.detect.ui.PortSettingActivity">
+    <include layout="@layout/title_bar_layout" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车牌识别方式"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/camera_car_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="24sp"
+            android:drawableStart="@drawable/ic_camera"
+            android:text="@string/camera_plate" />
+
+        <RadioButton
+            android:id="@+id/take_photo_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="24sp"
+            android:drawableStart="@drawable/ic_camera_alt_black_24dp"
+            android:text="@string/take_photo" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/port_info"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"/>
+<!--    <RadioGroup-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:orientation="horizontal">-->
+<!--        <RadioButton-->
+<!--            android:id="@+id/camera_connect"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:textSize="24sp"-->
+<!--            android:drawableStart="@drawable/ic_camera"-->
+<!--            android:text="@string/IDS_camera" />-->
+<!--        <RadioButton-->
+<!--            android:id="@+id/instrument_connect"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:textSize="24sp"-->
+<!--            android:drawableStart="@drawable/ic_oscilloscope"-->
+<!--            android:text="@string/IDS_instrument" />-->
+<!--    </RadioGroup>-->
+    <Button
+        android:id="@+id/saveConnectPort"
+        style="@style/btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:text="@string/save" />
+</LinearLayout>

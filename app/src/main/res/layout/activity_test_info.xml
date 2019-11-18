@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/title_gradient_color"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar_layout"/>
+    <TextView android:layout_width="match_parent"
+        android:text="开始"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/start1"
+            android:text="A"
+            android:onClick="onClick"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/start2"
+            android:text="B"
+            android:onClick="onClick"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/start3"
+            android:text="C"
+            android:onClick="onClick"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/start4"
+            android:text="D"
+            android:onClick="onClick"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"
+        android:text="停止"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/scale1"
+            android:text="A"
+            android:onClick="onClick"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/scale2"
+            android:text="B"
+            android:onClick="onClick"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/scale3"
+            android:text="C"
+            android:onClick="onClick"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/scale4"
+            android:text="D"
+            android:onClick="onClick"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

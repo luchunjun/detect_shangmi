@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="axis_types">
+        <item>全部</item>
+        <item>2轴</item>
+        <item>3轴</item>
+        <item>4轴</item>
+        <item>5轴</item>
+        <item>6轴</item>
+        <item>多轴</item>
+    </string-array>
+    <string-array name="big_car_types">
+        <item>@string/big_car_1</item>
+        <item>@string/big_car_2</item>
+        <item>@string/big_car_3</item>
+    </string-array>
+</resources>

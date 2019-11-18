@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/compensationFactor"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/lightDark"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/list_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"/>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="@dimen/paddingBottom_x_5"-->
+<!--            android:layout_marginEnd="@dimen/paddingLeft_x3"-->
+<!--            android:layout_marginStart="@dimen/paddingLeft_x3"-->
+<!--            android:layout_marginTop="@dimen/paddingBottom_x_5"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+
+            <Button
+                android:id="@+id/saveCompensationFactorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/paddingLeft_x2"
+                android:background="@drawable/button_style"
+                android:paddingBottom="@dimen/paddingBottom"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/paddingBottom"
+                android:text="保存"
+                android:textColor="@color/default_white"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <Button
+                android:id="@+id/resetCompnesationFactorButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/paddingLeft_x2"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_style"
+                android:paddingBottom="@dimen/paddingBottom"
+                android:paddingTop="@dimen/paddingBottom"
+                android:text="重置"
+                android:visibility="gone"
+                android:textColor="@color/default_white"
+                android:textSize="@dimen/font_size_normal"/>
+<!--        </LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

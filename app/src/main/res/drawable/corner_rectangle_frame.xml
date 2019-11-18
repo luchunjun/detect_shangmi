@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:paddingTop="@dimen/paddingBottom" android:paddingBottom="@dimen/paddingBottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/switch_close" />
+            <corners android:radius="4.0dip" />
+            <stroke android:color="@color/switch_close" />
+        </shape>
+    </item>
+    <item android:left="4.0px" android:top="4.0px" android:right="4.0px" android:bottom="4.0px">
+        <shape>
+            <solid android:color="@color/list_background_normal" />
+            <corners android:radius="4.0dip" />
+        </shape>
+    </item>
+</layer-list>

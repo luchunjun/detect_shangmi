@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@mipmap/record"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/controlCameraPower"
+        style="@style/home_btn_style"
+        android:layout_below="@id/hintLight"
+        android:onClick="controlCameraPower"
+        android:text="@string/open_camera_power" />
+
+    <Button
+        android:id="@+id/manualCheckButton"
+        style="@style/home_btn_style"
+        android:layout_below="@id/hintLight"
+        android:layout_toRightOf="@id/controlCameraPower"
+        android:background="@drawable/button_style"
+        android:text="@string/start" />
+
+    <Button
+        android:id="@+id/manualStopButton"
+        style="@style/home_btn_style"
+        android:layout_below="@id/hintLight"
+        android:layout_toRightOf="@id/manualCheckButton"
+        android:text="@string/stop" />
+
+    <Button
+        android:id="@+id/clear"
+        style="@style/home_btn_style"
+        android:layout_below="@id/hintLight"
+        android:layout_toRightOf="@id/manualStopButton"
+        android:text="@string/cancel" />
+
+    <GridView
+        android:id="@+id/device_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:columnWidth="180dp"
+        android:divider="@drawable/text_item_divider"
+        android:dividerHeight="1dp"
+        android:numColumns="2"
+        android:paddingLeft="3dp" />
+
+    <ImageView
+        android:id="@+id/hintLight"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/device_list_view"
+        android:layout_margin="12dp"
+        android:background="@drawable/hint_light" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/big_car_type_layout"
+        android:layout_below="@+id/device_list_view"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/hintLight"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/big_car_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:entries="@array/big_car_types"
+            android:spinnerMode="dropdown" />
+        <ImageView
+            android:id="@+id/big_car_type_pic"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/big_car_1" />
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/recordList"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_gravity="bottom|center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/paddingLeft"
+        android:layout_weight="4.0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.0"
+            android:gravity="center_vertical"
+            android:text="车牌号码"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/font_size_min"/>
+
+        <EditText
+            android:id="@+id/editTextCarNumber"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_min"/>
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:text="车型"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/font_size_min"/>
+        <Spinner
+            android:id="@+id/spinnerAxisType"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:entries="@array/axis_types"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_min"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginStart="@dimen/paddingLeft"
+        android:layout_weight="4.0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.0"
+            android:gravity="center_vertical"
+            android:text="检测日期"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/font_size_min"/>
+
+        <Spinner
+            android:id="@+id/spinnerYear"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.0"/>
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:gravity="center_vertical"
+            android:text="年"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/font_size_min"/>
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="6.0"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:gravity="center_vertical"
+            android:text="月"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/font_size_min"/>
+
+        <Spinner
+            android:id="@+id/spinnerDay"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="6.0"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:gravity="center_vertical"
+            android:text="日"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/font_size_min"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginStart="@dimen/paddingLeft"
+        android:layout_weight="4.0"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxShowOnlyOverWeight"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.0"
+            android:gravity="center_vertical"
+            android:text="@string/only_display_overLimit_info"
+            android:textColor="@color/secondary"
+            android:textSize="@dimen/font_size_min"/>
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="4.0">
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="@dimen/paddingLeft"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_style"
+                android:gravity="center"
+                android:text="重 置"
+                android:textColor="@color/default_white"
+                android:textSize="@dimen/font_size_min"/>
+
+            <Button
+                android:id="@+id/buttonQuery"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginEnd="@dimen/paddingLeft_x3"
+                android:layout_marginStart="@dimen/paddingLeft"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_style"
+                android:gravity="center"
+                android:text="查 询"
+                android:textColor="@color/default_white"
+                android:textSize="@dimen/font_size_min"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/record_list_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="40.0"
+        android:background="@color/backgroundcolor">
+        <ListView
+            android:id="@+id/listViewTable"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="70.0px"
+            android:choiceMode="multipleChoice"
+            android:clickable="true"
+            android:drawSelectorOnTop="false"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="@dimen/paddingLeft_x3"
+        android:layout_marginRight="@dimen/paddingLeft_x3"
+        android:layout_weight="5.0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/paddingBottom"
+        android:paddingTop="@dimen/paddingBottom">
+
+        <Button
+            android:id="@+id/buttonTotalSelection"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="@dimen/paddingLeft_x3"
+            android:layout_marginStart="@dimen/paddingLeft_x3"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_style"
+            android:text="全 选"
+            android:textColor="@color/default_white"
+            android:textSize="@dimen/font_size_min"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="@dimen/paddingLeft_x3"
+            android:layout_marginStart="@dimen/paddingLeft_x3"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_style"
+            android:text="删 除"
+            android:textColor="@color/default_white"
+            android:textSize="@dimen/font_size_min"/>
+
+        <Button
+            android:id="@+id/buttonPrint"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="@dimen/paddingLeft_x3"
+            android:layout_marginStart="@dimen/paddingLeft_x3"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_style"
+            android:text="打印"
+            android:textColor="@color/default_white"
+            android:textSize="@dimen/font_size_min"/>
+    </LinearLayout>
+</LinearLayout>
